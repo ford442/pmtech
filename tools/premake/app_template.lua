@@ -172,13 +172,13 @@ local function setup_web()
 	
 	configuration "Debug"
 		buildoptions { 
-			"-g4", 
+			"-gsource-map", 
 			"-s STACK_OVERFLOW_CHECK=1", 
 			"-s SAFE_HEAP=1", 
 			"-s DETERMINISTIC=1" 
 		}
 		linkoptions { 
-			"-g4", 
+			"-gsource-map", 
 			"--source-map-base http://localhost:8000/web/",
 			"-s STACK_OVERFLOW_CHECK=1", 
 			"-s SAFE_HEAP=1", 
