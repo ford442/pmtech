@@ -5,6 +5,7 @@
 using namespace put;
 using namespace ecs;
 
+void pen_window;
 namespace pen
 {
     pen_creation_params pen_entry(int argc, char** argv)
